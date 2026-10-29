@@ -8,3 +8,8 @@ In this phase, I created a Bag class that allows items and other bags to be adde
 
 Phase 3 -
 In this phase, we built a nested inventory with a backpack, Potion Pouch, Herb Pouch, and Bag of Holding. I used displayInfo() to display the entire inventory and a nested pouch independently. I also used getWeight() to calculate the total weight of the backpack and Potion Pouch. Lastly, I used a try-catch block to handle the exception when attempting to add an item to another item. If I create a new WeightlessBag class that extends InventoryComponent and implements its own getWeight() method, I would not need to modify the existing Item or Bag classes. I would be extending the program by adding a new class instead of changing the existing classes, which follows the Open/Closed Principle. The Composite pattern supports the Open/Closed Principle because it allows me to add new types of items or bags without modifying the existing classes. I can create a new class that extends InventoryComponent, and the existing inventory system can work with it through the shared parent class. This makes the program easier to expand without rewriting code that already works.
+
+
+Phase 4- 
+During testing, I did not encounter any bugs. I tested edge cases, including an empty bag and removing an item from a bag. The empty bag returned only its base weight, and removing the Potion of Speed correctly reduced the total weight from 3.1 lbs to 2.9 lbs. I created a separate pouch for the removal test so I would not change anything in the original inventory. All my tests produced the expected results, and I did not need to make any changes to my Item or Bag classes.
+

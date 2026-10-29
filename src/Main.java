@@ -46,6 +46,29 @@ try {
        }
     
 
+       System.out.println("\n=== Phase 4 test 1 ===");
+
+    Bag emptyBag = new Bag("Empty Bag", 1.0);
+    
+    emptyBag.displayInfo();
+    System.out.println("Total Weight: " + emptyBag.getWeight() + " lbs");
+
+    System.out.println("\n=== Phase 4 test 2 ===");
+
+    Bag pouch1 = new Bag("Test 2 Pouch", 2.0);
+
+    pouch1.add(healthPotion);
+    pouch1.add(speedPotion);
+    pouch1.add(herbs);
+
+    pouch1.displayInfo();
+    System.out.println("Total Weight: " + pouch1.getWeight() + " lbs");
+
+    pouch1.remove(speedPotion);
+
+    pouch1.displayInfo();
+    System.out.println("\n Total Weight after removing item: " + pouch1.getWeight() + " lbs");
+
     }
 
     
