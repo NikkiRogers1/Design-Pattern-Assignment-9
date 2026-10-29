@@ -19,7 +19,7 @@ public class Bag extends InventoryComponent{
 
 @Override
     public double getWeight(){
-        
+
         double totalWeight = this.baseWeight;
         for (InventoryComponent component : items) {
             totalWeight += component.getWeight();
@@ -49,7 +49,7 @@ public class Bag extends InventoryComponent{
 
 @Override
     public void displayInfo() {
-        System.out.println("\nName: " + name + "BaseWeight: " + baseWeight);
+        System.out.println("\nName: " + name + " BaseWeight: " + baseWeight);
 
         for(InventoryComponent component  : items) {
             component.displayInfo();
